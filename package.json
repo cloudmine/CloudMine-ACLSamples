@@ -1,0 +1,16 @@
+{
+  "name": "CloudMine-ACLSamples",
+  "version": "1.0.0",
+  "description": "This project is a suite of TAP integration tests with CloudMine specifically for Access Lists (ACLs). ACLs allow users to control object and file permissions between users on CloudMine. A list contains the user ids that the ACL applies to along with the CRUD operations the list permits. Once a list is created, any user can append the id of the ACL to the __access__ field of a CloudMine object. Users contained in the list will have the permitted CRUD capbility once the object is saved. While the ACL id can be applied to an object by any user, the list itself can only be modified by the creator. This allows developers to create features like a managed admin list with read and update permissions on user objects or for users to create their own permissions lists to append to objects controlling the shared aspects of their user data. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Donahue",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^0.9.0",
+    "cloudmine": "^0.9.14",
+    "tap": "^0.7.1"
+  }
+}
